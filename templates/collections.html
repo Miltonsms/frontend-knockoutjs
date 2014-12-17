@@ -1,0 +1,134 @@
+<htlm>
+<head>
+<meta charset= "utf-8">
+<title></title>
+<!-- CSS BOSTSTRAP-->
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.css" type="text/css"/>
+<!-- CSS STYLE-->
+<link rel="stylesheet" href="../css/collections.css" type="text/css"/>
+<script src="../knockout/knockout-3.2.0.js"></script>
+<script src="../js/jquery-2.1.1.js"></script>
+</head>
+<body>
+<div class= "container ">
+    <div class="row">
+      <nav class="navbar navbar-inverse borde" role="navigation">
+          <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header ">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Inicio</a>
+            </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li ><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+<div class= "container">
+  <div class="row">
+    <div class="col-md-1" > </div>
+      <div class="col-md-10 color" >
+              
+     <div class="col-md-5" >
+    <div class="readout">
+        <h3>What's in the model?</h3>
+        <table>
+            <tr>
+                <td class="label">Text value:</td>
+                <td data-bind="text: stringValue"></td>
+            </tr>
+            <tr>
+                <td class="label">Password:</td>
+                <td data-bind="text: passwordValue"></td>
+            </tr>
+            <tr>
+                <td class="label">Bool value:</td>
+                <td data-bind='text: booleanValue() ? "True" : "False"'></td>
+            </tr>
+            <tr>
+                <td class="label">Selected option:</td>
+                <td data-bind="text: selectedOptionValue"></td>
+            </tr>
+            <tr>
+                <td class="label">Multi-selected options:</td>
+                <td data-bind="text: multipleSelectedOptionValues"></td>
+            </tr>
+            <tr>
+                <td class="label">Radio button selection:</td>
+                <td data-bind="text: radioSelectedOptionValue"></td>
+            </tr>
+        </table>
+    </div>
+     </div>
+      <div class="col-md-5" >
+    <h3>HTML controls</h3.>
+    <table>
+        <tr>
+            <td class="label">Text value (updates on change):</td>
+            <td><input data-bind="value: stringValue" /></td>
+        </tr>
+        <tr>
+            <td class="label">Text value (updates on keystroke):</td>
+            <td><input data-bind='value: stringValue, valueUpdate: "afterkeydown"' /></td>
+        </tr>
+        <tr>
+            <td class="label">Text value (multi-line):</td>
+            <td><textarea data-bind="value: stringValue"> </textarea></td>
+        </tr>
+        <tr>
+            <td class="label">Password:</td>
+            <td><input type="password" data-bind="value: passwordValue" /></td>
+        </tr>
+        <tr>
+            <td class="label">Checkbox:</td>
+            <td><input type="checkbox" data-bind="checked: booleanValue" /></td>
+        </tr>
+        <tr>
+            <td class="label">Drop-down list:</td>
+            <td><select data-bind="options: optionValues, value: selectedOptionValue"></select></td>
+        </tr>
+        <tr>
+            <td class="label">Multi-select drop-down list:</td>
+            <td><select multiple="multiple" data-bind="options: optionValues, selectedOptions: multipleSelectedOptionValues"></select></td>
+        </tr>
+        <tr>
+            <td class="label">Radio buttons:</td>
+            <td>
+                <label><input type="radio" value="Alpha" data-bind="checked: radioSelectedOptionValue" />Alpha</label>
+                <label><input type="radio" value="Beta" data-bind="checked: radioSelectedOptionValue" />Beta</label>
+                <label><input type="radio" value="Gamma" data-bind="checked: radioSelectedOptionValue" />Gamma</label>
+            </td>
+        </tr>
+    </table>
+    
+
+
+
+</div>
+
+      </div>
+    <div class="col-md-1" ></div>
+
+  </div>
+</div>
+
+
+
+
+</div>
+<!-- js script -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/collections.js"></script>
+</body>
+</htlm>

@@ -1,0 +1,49 @@
+<htlm>
+<head>
+<meta charset= "utf-8">
+<title>list</title>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css" type="text/css"/>
+<link rel="stylesheet" href="../css/list.css" type="text/css"/>
+<!-- js knockout -->
+<script src="../knockout/knockout-3.2.0.js"></script>
+<script src="../js/jquery-2.1.1.js"></script>
+</head>
+    <body>
+        <div class= "container ">
+            <div class="row">
+                <div class="col-md-1" ></div>
+                <div class="col-md-10" >
+                    <div class="panel panel-default"><div class="panel-heading center">Lista de compras</div>
+
+
+	                    <div class="panel-body">
+<div class='liveExample'> 
+    
+    <form data-bind="submit:addItem">
+        Ingrese producto: <input tyHellope="text" data-bind='value:itemToAdd, valueUpdate: "afterkeydown"' />
+        <button type="submit" data-bind="enable: itemToAdd().length > 0">Agregar</button>
+    </form>
+     
+    <p class="center">Lista de Producto:</p>
+    <select multiple="multiple" height="5" data-bind="options:allItems, selectedOptions:selectedItems"> </select>
+     
+    <div>
+        <button data-bind="click: removeSelected, enable: selectedItems().length > 0">Eliminar</button>
+        <button data-bind="click: sortItems, enable: allItems().length > 1">Ordenar</button>
+    </div>
+    
+</div>
+	                    </div>
+
+
+                	</div>
+                </div>
+                <div class="col-md-1" ></div>
+            </div>
+        </div>
+<!-- js script -->
+    <script src="../js/list.js"></script>
+    </body>
+</htlm>
+

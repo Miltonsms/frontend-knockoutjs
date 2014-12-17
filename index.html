@@ -1,4 +1,76 @@
-<!--
-Usa este archivo para tu proyecto. No olvides hacer
-la estructura correta y guardar TODO tu CSS en el archivo styles.css
- -->
+<htlm>
+<head>
+<meta charset= "utf-8">
+<title></title>
+<!-- CSS BOSTSTRAP-->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" type="text/css"/>
+<!-- CSS STYLE-->
+<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+<script src="knockout/knockout-3.2.0.js"></script>
+<script src="js/jquery-2.1.1.js"></script>
+</head>
+<body>
+<div class= "container ">
+    <div class="row">
+      <nav class="navbar navbar-inverse borde" role="navigation">
+          <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header ">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Inicio</a>
+            </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li ><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+
+
+<div class= "container">
+  <div class="row">
+    <div class="col-md-3" > </div>
+      <div class="col-md-6" >
+        <div class="panel panel-default"><div class="panel-heading center">Controles</div>
+        <div class="panel-body">
+
+
+              <div class='liveExample'>   
+    <p>First name: <input data-bind='value: firstName' /></p> 
+    <p>Last name: <input data-bind='value: lastName' /></p> 
+    <h2>Hello, <span data-bind='text: fullName'> </span>!</h2>  
+</div>
+
+
+
+
+
+        </div>
+        </div>
+
+      </div>
+    <div class="col-md-3" ></div>
+
+  </div>
+</div>
+
+
+
+
+</div>
+<!-- js script -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</htlm>
